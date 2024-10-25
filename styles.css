@@ -1,14 +1,59 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2113.65">
-  <style type="text/css">
-  </style>
-</head>
-<body>
-</body>
-</html>
+html, body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.background{
+  height: 100vh;
+  width: 100%;
+  background-color: blue;
+}
+
+.todocontainer{
+  height: 600px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: bisque;
+  position: relative;
+  left: 20px;
+  top: 20px;
+  border: 2px #4B4B4B ;
+  border-radius: 25px;
+  box-shadow: 5px 5px 15px black;
+}
+
+.todocontitle{
+  padding-left: 10px;
+}
+
+#titleinput{
+  margin-top: 15px;
+  margin-bottom: 20px;
+  height: 80%;
+  width: 70%;
+  border: 2px solid #4B4B4B ;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.todocontasks{
+  height: 100%;
+  width: 100%;
+  padding-left: 10px;
+}
+
+#tasktextarea {
+  height: 200px; /* Initial height */
+  width: 70%; /* Initial width */
+  resize: both; /* Allows resizing both horizontally and vertically */
+  min-width: 200px; /* Minimum width to avoid becoming too narrow */
+  max-width: 400px; /* Maximum width to control excessive growth */
+  min-height: 200px; /* Minimum height to ensure enough typing space */
+  max-height: 500px; /* Maximum height to keep within page layout */
+  border: 2px solid #4B4B4B ;
+  border-radius: 10px;
+  margin-top: 25px;
+}
